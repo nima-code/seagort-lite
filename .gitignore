@@ -8,4 +8,6 @@ pubspec.lock
 
 .DS_Store
 
-bridge/**
+tools/**
+
+process.txt
