@@ -1,0 +1,11 @@
+.dart_tool/
+
+.vscode/
+
+pubspec.lock
+
+.idea/
+
+.DS_Store
+
+bridge/**
