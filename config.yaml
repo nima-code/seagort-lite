@@ -1,0 +1,17 @@
+# Run with `flutter pub run ffigen --config ffigen.yaml`.
+name: SeagortBindings
+description: |
+  Bindings for seagort.
+output: 'lib/native_go_library.dart'
+headers:
+  entry-points:
+    - 'utils/go/awesome.h'
+  include-directives:
+    - 'utils/go/awesome.h'
+preamble: |
+  // Copyright (c) 2024 NIMA. 
+  // This package is governed by an MIT License.
+comments:
+  style: any
+  length: full
+ffi-native:

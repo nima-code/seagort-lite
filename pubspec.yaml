@@ -1,0 +1,11 @@
+name: seagort
+
+environment:
+  sdk: '>=3.0.0'
+
+dependencies:
+  ffi: ^2.1.0
+  path: ^1.9.0
+
+dev_dependencies:
+  ffigen: ^11.0.0
