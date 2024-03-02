@@ -31,20 +31,7 @@ func CompileAndRunJavaScript(input *C.char) *C.char {
 }
 
 func main() {
-	vm := otto.New()
-
-	// Execute JavaScript code
-	result, err := vm.Run(`
-        var x = 10;
-        var y = 20;
-        x + y;
-    `)
-	if err != nil {
-		fmt.Println("Error executing JavaScript:", err)
-		return
-	}
-
-	// Get the result of the JavaScript code
-	value, _ := result.ToInteger()
-	fmt.Println("Result:", value)
+	CompileAndRunJavaScript(C.CString(`
+	console.log("Hello World");
+	`))
 }

@@ -10,11 +10,11 @@ echo $GOOS $GOARCH && go build -o ../../bridge/linux/libseagort.so -buildmode=c-
 
 GOOS=darwin 
 GOARCH=amd64 
-echo $GOOS $GOARCH && go build -o ../../bridge/mac_intel/libjavascript.dylib -buildmode=c-shared main.go
+echo $GOOS $GOARCH && go build -o ../../bridge/mac_intel/libseagort.dylib -buildmode=c-shared main.go
 
 GOOS=windows 
 GOARCH=amd64 
-echo $GOOS $GOARCH && go build -o ../../bridge/windows/libjavascript.dll -buildmode=c-shared main.go
+echo $GOOS $GOARCH && go build -o ../../bridge/windows/libseagort.dll -buildmode=c-shared main.go
 
 GOOS=darwin
 GOARCH=arm64
