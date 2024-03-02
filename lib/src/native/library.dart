@@ -1,5 +1,8 @@
 // Copyright (c) 2024 NIMA.
 // This package is governed by an MIT License.
+// Auto-Generated File: DO NOT EDIT
+//
+// NIMA CODE: nima002
 
 // AUTO GENERATED FILE, DO NOT EDIT.
 //
@@ -7,10 +10,10 @@
 // ignore_for_file: type=lint
 import 'dart:ffi' as ffi;
 
-@ffi.Native<GoInt Function(GoInt, GoInt)>(symbol: 'add')
-external int add(
-  int a,
-  int b,
+@ffi.Native<ffi.Pointer<ffi.Char> Function(ffi.Pointer<ffi.Char>)>(
+    symbol: 'CompileAndRunJavaScript')
+external ffi.Pointer<ffi.Char> CompileAndRunJavaScript(
+  ffi.Pointer<ffi.Char> input,
 );
 
 final class _GoString_ extends ffi.Struct {
