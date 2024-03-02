@@ -13,6 +13,8 @@ cargo build $RELEASE --target=x86_64-apple-darwin # Mac OSX AMD Version
 cargo build $RELEASE --target=x86_64-unknown-linux-gnu # Linux 
 cargo build $RELEASE --target=x86_64-pc-windows-msvc # Windows
 
-cbindgen --config cbindgen.toml --lang c --output lib_seagort.h
+cbindgen --config cbindgen.toml --lang c --output libseagort.h
 
 cp lib_seagort.h ../
+
+cp target/release/libseagort.dylib ../
