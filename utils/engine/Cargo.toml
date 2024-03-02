@@ -14,3 +14,6 @@ crate-type = ["cdylib"]
 async-ffi = "0.5.0"
 deno_core = "0.266.0"
 tokio = { version = "1.36.0", features = ["full"] }
+
+[build-dependencies]
+cbindgen = "0.24.0"
