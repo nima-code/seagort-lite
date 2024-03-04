@@ -1,2 +1,4 @@
 *.sh linguist-vendored
 *.ps1 linguist-vendored
+
+example/*.js linguist-vendored
