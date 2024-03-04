@@ -1,4 +1,4 @@
-import 'package:seagort/seagort.dart';
+import 'package:seagort_lite/seagort.dart';
 
 void main() {
   print(compileJS('''

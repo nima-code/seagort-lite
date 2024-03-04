@@ -1,5 +1,8 @@
-name: seagort
+name: seagort_lite
 version: 0.1.0-pre
+
+executables:
+  seagort:
 
 environment:
   sdk: '>=3.0.0'

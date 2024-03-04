@@ -1,5 +1,5 @@
 import 'dart:io' as io;
-import 'package:seagort/src/lib/compile.dart';
+import 'lib/compile.dart';
 
 String compileJS(String js) => compileJavaSript(js);
 

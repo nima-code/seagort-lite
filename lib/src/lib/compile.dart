@@ -1,7 +1,7 @@
 import 'dart:ffi';
 import 'package:ffi/ffi.dart';
-import 'package:seagort/src/native/library.dart' show CompileAndRunJavaScript;
-import 'package:seagort/src/source.dart';
+import '../native/library.dart' show CompileAndRunJavaScript;
+import '../source.dart';
 
 String _compileJS(String data) {
   final _ = readLibrary();
