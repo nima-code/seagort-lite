@@ -31,7 +31,7 @@ func CompileAndRunJavaScript(input *C.char) *C.char {
 }
 
 func main() {
-	CompileAndRunJavaScript(C.CString(`
-	console.log("Hello World");
-	`))
+	fmt.Println(C.GoString(CompileAndRunJavaScript(C.CString(`
+	let a = 9;
+	`))))
 }

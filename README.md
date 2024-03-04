@@ -12,3 +12,6 @@ void main() {
 ```
 
 For more on the engine that runs this package, check the `utils/engine` directory of this package.
+
+## Issues
+- The engine only supports ES5, and it has a [few issues of its own](https://github.com/robertkrimen/otto?tab=readme-ov-file#caveat-emptor).

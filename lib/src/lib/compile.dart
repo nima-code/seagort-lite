@@ -4,8 +4,8 @@ import 'package:seagort/src/native/library.dart' show CompileAndRunJavaScript;
 import 'package:seagort/src/source.dart';
 
 String _compileJS(String data) {
-  final dylib = readLibrary();
-  final nativeData = "Your message".toNativeUtf8().cast<Char>();
+  final _ = readLibrary();
+  final nativeData = data.toNativeUtf8().cast<Char>();
   final result = CompileAndRunJavaScript(nativeData);
   return result.cast<Utf8>().toDartString();
 }
