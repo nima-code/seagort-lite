@@ -1,7 +1,9 @@
-# Seagort
+# Seagort Lite
 > NIMA Code: nima002
 
 Seagort is a Dart Package for compiling JavaScript outside the web. With this package, you can write JavaScript Code and run it, producing the result as a `String`. 
+
+This is the *lite* version of the intended package, or *go-seagort* (as it is the [golang](https://go.dev/) implementation of the package library).
 
 ```dart
 import 'package:seagort/seagort.dart';
