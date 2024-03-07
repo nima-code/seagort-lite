@@ -8,4 +8,6 @@ pubspec.lock
 
 .DS_Store
 
+doc/
+
 tools/**

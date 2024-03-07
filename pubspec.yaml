@@ -1,5 +1,7 @@
 name: seagort_lite
+description: Run JavaScript on the backend/vm with Seagort.
 version: 0.1.0-pre
+repository: https://github.com/nima-code/seagort-lite
 
 executables:
   seagort:
