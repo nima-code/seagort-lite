@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-go@v5.0.0
       - name: Create Build Files
         run: go build -o ../../bridge/windows/libseagort.dll -buildmode=c-shared main.go
-        working-directory: ./utils/engine
+        working-directory: utils/engine
       - uses: actions/upload-artifact@master
         with:
           name: windows-build
@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-go@v5.0.0
       - name: Create Build Files
         run: go build -o ../../bridge/mac_arm/libseagort.dylib -buildmode=c-shared main.go
-        working-directory: ./utils/engine
+        working-directory: utils/engine
       - uses: actions/upload-artifact@master
         with:
           name: macos-build
@@ -40,7 +40,7 @@ jobs:
         uses: actions/setup-go@v5.0.0
       - name: Create Build Files
         run: go build -o ../../bridge/linux/libseagort.so -buildmode=c-shared main.go
-        working-directory: ./utils/engine
+        working-directory: utils/engine
       - uses: actions/upload-artifact@master
         with:
           name: linux-build
