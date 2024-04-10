@@ -19,7 +19,7 @@ jobs:
       - name: Setup Go environment
         uses: actions/setup-go@v5.0.0
       - name: Create Build Files
-        run: go build -o bridge/windows/libseagort.dll -buildmode=c-shared utils/engine/main.go
+        run: go build -o bridge\windows\libseagort.dll -buildmode=c-shared utils\engine\main.go
       - uses: actions/upload-artifact@master
         with:
           name: windows-build
@@ -90,5 +90,5 @@ jobs:
       # want to change this to 'flutter test'.
       - name: Run tests
         run: dart test
-      - name: Publish
-        run: dart pub publish --force
+      # - name: Publish
+      #   run: dart pub publish --force
