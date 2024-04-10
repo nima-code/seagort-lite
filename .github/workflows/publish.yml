@@ -15,6 +15,7 @@ jobs:
   build-windows:
     runs-on: windows-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Setup Go environment
         uses: actions/setup-go@v5.0.0
       - name: Create Build Files
@@ -26,6 +27,7 @@ jobs:
   build-mac:
     runs-on: macos-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Setup Go environment
         uses: actions/setup-go@v5.0.0
       - name: Create Build Files
@@ -37,6 +39,7 @@ jobs:
   build-linux:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Setup Go environment
         uses: actions/setup-go@v5.0.0
       - name: Create Build Files
